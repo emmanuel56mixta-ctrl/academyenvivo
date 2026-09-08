@@ -24,6 +24,7 @@ h1{font-size:29px;margin:5px 0 4px;letter-spacing:-.04em}
 .status{display:flex;align-items:center;gap:9px;border:1px solid var(--line);background:#09192b;
   border-radius:13px;padding:10px 13px;font-size:11px;font-weight:800}
 .dot{width:8px;height:8px;background:var(--green);border-radius:50%;box-shadow:0 0 0 4px rgba(24,196,119,.11)}
+
 .rooms{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
 .room{background:linear-gradient(180deg,#0b1d31,#09192b);border:1px solid var(--line);
   color:white;border-radius:14px;padding:13px;display:flex;align-items:center;gap:11px;text-align:left}
@@ -33,6 +34,7 @@ h1{font-size:29px;margin:5px 0 4px;letter-spacing:-.04em}
 .rcopy{min-width:0;flex:1} .rname{font-size:12px;font-weight:900}
 .rtopic{font-size:10px;color:var(--muted);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .liveword{color:#48d999;font-size:9px;font-weight:900}
+
 .layout{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:16px;align-items:start}
 .card{background:linear-gradient(180deg,#0b1d31,#09192b);border:1px solid var(--line);
   border-radius:var(--radius);overflow:hidden}
@@ -44,6 +46,7 @@ h1{font-size:29px;margin:5px 0 4px;letter-spacing:-.04em}
 .session-text{min-width:0;flex:1} .session-title{font-size:17px;font-weight:900}
 .session-desc{font-size:11px;color:var(--muted);margin-top:4px}
 .action{background:#0b1c30;color:white;border:1px solid var(--line);border-radius:10px;padding:9px 11px;font-size:10px;font-weight:800}
+
 .tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;padding:7px;background:#09192b;border-bottom:1px solid var(--line)}
 .tab{border:0;color:#9eb0c4;background:transparent;border-radius:10px;padding:11px 7px;font-size:11px;font-weight:850}
 .tab.active{background:linear-gradient(180deg,#ff0a72,#da005b);color:#fff}
@@ -63,6 +66,7 @@ textarea{width:100%;min-height:90px;border:1px solid var(--line);background:#081
 textarea:focus{border-color:var(--pink)}
 .reactions{display:flex;gap:7px;margin-top:10px;flex-wrap:wrap}
 .react{border:1px solid var(--line);background:#09192b;color:white;border-radius:999px;padding:7px 9px;font-size:10px}
+
 .chat-shell{height:610px;position:relative;border-radius:12px;overflow:hidden;background:#071426}
 .chat-frame{width:100%;height:100%;border:0;background:white;display:block}
 .chat-fallback{display:none;height:100%;padding:24px;text-align:center;place-items:center}
@@ -74,9 +78,11 @@ textarea:focus{border-color:var(--pink)}
 .yt-link{display:inline-block;margin-top:13px;background:var(--pink);color:white;border-radius:10px;padding:9px 12px;text-decoration:none;font-size:10px;font-weight:900}
 .test-info{margin-bottom:10px;padding:10px 11px;border-radius:10px;background:#10243b;color:#aebacd;font-size:10px;line-height:1.45}
 .test-info b{color:#fff}
+
 .resource{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.07)}
 .ricon{width:34px;height:34px;border-radius:9px;background:#142942;display:grid;place-items:center}
 .rtext{flex:1;min-width:0}.rtext strong{display:block;font-size:11px}.rtext span{font-size:9px;color:var(--muted)}
+
 .below{display:grid;grid-template-columns:1.25fr .75fr;gap:16px;margin-top:16px}
 .box{padding:16px}
 .box h3{font-size:13px;margin:0 0 11px}
@@ -84,9 +90,11 @@ textarea:focus{border-color:var(--pink)}
 .row:first-of-type{border-top:0} .time{font-size:10px;font-weight:900} .row strong{font-size:11px}
 .row span{display:block;font-size:9px;color:var(--muted);margin-top:3px}
 .badge{font-size:9px;color:#ff5a99;background:rgba(245,0,98,.12);padding:5px 7px;border-radius:999px}
+
 .toast{position:fixed;right:18px;bottom:18px;background:white;color:#132238;border-radius:11px;padding:10px 13px;
   font-size:10px;font-weight:900;opacity:0;transform:translateY(7px);transition:.2s;z-index:99}
 .toast.show{opacity:1;transform:none}
+
 @media(max-width:1050px){
   .layout{grid-template-columns:1fr}
   .rooms{grid-template-columns:repeat(2,1fr)}
@@ -117,10 +125,10 @@ textarea:focus{border-color:var(--pink)}
   </section>
 
   <section class="rooms">
-    <button class="room active"><div class="num">01</div><div class="rcopy"><div class="rname">Plenaria</div><div class="rtopic">Transmisión de prueba</div></div><div class="liveword">VIVO</div></button>
-    <button class="room"><div class="num">02</div><div class="rcopy"><div class="rname">IA para Docentes</div><div class="rtopic">Diseña experiencias con IA</div></div><div class="liveword">VIVO</div></button>
-    <button class="room"><div class="num">03</div><div class="rcopy"><div class="rname">Liderazgo</div><div class="rtopic">Acompañamiento y supervisión</div></div><div class="liveword">VIVO</div></button>
-    <button class="room"><div class="num">04</div><div class="rcopy"><div class="rname">Innovación</div><div class="rtopic">Tecnología con sentido pedagógico</div></div><div class="liveword">VIVO</div></button>
+    <button class="room active" data-video="6a4SlHU0d6g" data-title="Plenaria" data-desc="Transmisión principal"><div class="num">01</div><div class="rcopy"><div class="rname">Plenaria</div><div class="rtopic">Transmisión principal</div></div><div class="liveword">VIVO</div></button>
+    <button class="room" data-video="w7H2B22g27w" data-title="IA para Docentes" data-desc="Segunda transmisión en vivo"><div class="num">02</div><div class="rcopy"><div class="rname">IA para Docentes</div><div class="rtopic">Segunda transmisión en vivo</div></div><div class="liveword">VIVO</div></button>
+    <button class="room" data-video="6a4SlHU0d6g" data-title="Liderazgo" data-desc="Acompañamiento y supervisión"><div class="num">03</div><div class="rcopy"><div class="rname">Liderazgo</div><div class="rtopic">Acompañamiento y supervisión</div></div><div class="liveword">VIVO</div></button>
+    <button class="room" data-video="w7H2B22g27w" data-title="Innovación" data-desc="Tecnología con sentido pedagógico"><div class="num">04</div><div class="rcopy"><div class="rname">Innovación</div><div class="rtopic">Tecnología con sentido pedagógico</div></div><div class="liveword">VIVO</div></button>
   </section>
 
   <section class="layout">
@@ -129,7 +137,8 @@ textarea:focus{border-color:var(--pink)}
         <div class="video-wrap">
           <div class="live">● EN VIVO</div>
           <iframe
-            src="https://www.youtube.com/embed/QKj6QIj0_Uk?rel=0"
+            id="mainVideo"
+            src="https://www.youtube.com/embed/6a4SlHU0d6g?rel=0"
             title="YouTube Live"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
@@ -138,7 +147,7 @@ textarea:focus{border-color:var(--pink)}
         <div class="session">
           <div class="session-text">
             <div class="session-title">Prueba de transmisión + chat integrado</div>
-            <div class="session-desc">Video ID: QKj6QIj0_Uk · El chat usa exactamente el mismo video.</div>
+            <div class="session-desc">Video ID: <span id="videoIdText">6a4SlHU0d6g</span> · El chat usa exactamente el mismo video.</div>
           </div>
           <button class="action" id="attendance">✓ Registrar asistencia</button>
         </div>
@@ -195,7 +204,7 @@ textarea:focus{border-color:var(--pink)}
               <div class="chat-icon">💬</div>
               <h3 id="fallbackTitle">Chat no disponible en esta vista</h3>
               <p id="fallbackText">Para mostrar el chat oficial, abre esta prueba desde un dominio web que coincida con <b>embed_domain</b>.</p>
-              <a class="yt-link" href="https://www.youtube.com/watch?v=QKj6QIj0_Uk" target="_blank" rel="noopener">Abrir transmisión en YouTube ↗</a>
+              <a class="yt-link" id="youtubeFallbackLink" href="https://www.youtube.com/watch?v=6a4SlHU0d6g" target="_blank" rel="noopener">Abrir transmisión en YouTube ↗</a>
             </div>
           </div>
         </div>
@@ -213,7 +222,7 @@ textarea:focus{border-color:var(--pink)}
 <div class="toast" id="toast">Listo</div>
 
 <script>
-const VIDEO_ID = "QKj6QIj0_Uk";
+let VIDEO_ID = "6a4SlHU0d6g";
 const toast = (msg) => {
   const t=document.getElementById('toast');
   t.textContent=msg;t.classList.add('show');
@@ -253,16 +262,26 @@ document.getElementById('attendance').addEventListener('click',function(){
   toast('Asistencia registrada');
 });
 
-(function setupYouTubeChat(){
+/* CHAT REAL DE YOUTUBE
+   YouTube exige que embed_domain coincida con el dominio de la página.
+   En web móvil el chat incrustado oficial no está disponible.
+*/
+function setupYouTubeChat(){
   const frame=document.getElementById('youtubeChat');
   const fallback=document.getElementById('chatFallback');
   const info=document.getElementById('domainInfo');
   const fallbackTitle=document.getElementById('fallbackTitle');
   const fallbackText=document.getElementById('fallbackText');
+  const fallbackLink=document.getElementById('youtubeFallbackLink');
 
   const host=window.location.hostname;
   const isLocalFile=window.location.protocol==='file:' || !host;
   const isMobile=window.matchMedia('(max-width: 700px)').matches;
+  fallbackLink.href='https://www.youtube.com/watch?v='+encodeURIComponent(VIDEO_ID);
+
+  frame.removeAttribute('src');
+  frame.style.display='block';
+  fallback.classList.remove('show');
 
   if(isMobile){
     frame.style.display='none';
@@ -282,9 +301,21 @@ document.getElementById('attendance').addEventListener('click',function(){
 
   const chatURL='https://www.youtube.com/live_chat?v='+encodeURIComponent(VIDEO_ID)+'&embed_domain='+encodeURIComponent(host);
   frame.src=chatURL;
-  fallback.classList.remove('show');
-  info.innerHTML='<b>Chat oficial activo.</b> embed_domain = '+host;
-})();
+  info.innerHTML='<b>Chat oficial activo.</b> Sala actual: '+VIDEO_ID+' · embed_domain = '+host;
+}
+
+document.querySelectorAll('.room').forEach(room=>room.addEventListener('click',()=>{
+  document.querySelectorAll('.room').forEach(x=>x.classList.remove('active'));
+  room.classList.add('active');
+  VIDEO_ID=room.dataset.video;
+  document.getElementById('mainVideo').src='https://www.youtube.com/embed/'+encodeURIComponent(VIDEO_ID)+'?rel=0';
+  document.getElementById('videoIdText').textContent=VIDEO_ID;
+  document.querySelector('.session-title').textContent=room.dataset.title+' · transmisión + chat integrado';
+  setupYouTubeChat();
+  toast('Cambiaste a '+room.dataset.title);
+}));
+
+setupYouTubeChat();
 </script>
 </body>
 </html>
